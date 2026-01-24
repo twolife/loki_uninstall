@@ -13,7 +13,10 @@
 #include <signal.h>
 
 #include "setupdb.h"
-#include "install.h"
+
+#include <libintl.h>
+#define _(String) gettext (String)
+
 #ifdef UNINSTALL_UI
 #include "uninstall_ui.h"
 #endif
